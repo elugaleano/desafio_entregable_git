@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.paginaPrincipal
+{
+    background-color: rgb(81, 159, 223);
+    color:black;
+}
+
+.barraNavegacion{
+    display: grid;
+    grid-template-columns: 92% 8%;
+    grid-template-rows: 100px;
+    grid-template-areas: "titulo1 logo";
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imagenLogo{
+    grid-area: logo;
+    background-size: cover;
+    background-color: red;
+}
+body header nav div{
+    grid-area: titulo1;
+    background-color: red;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+body header nav div h1{
+    font-size: 50px;
+    color: white;
+    margin-top: 20px;
+}
+
+.seccionesPrincipales{
+    margin-left: 45%;
+}
+
+body header nav ul{
+    display: flex;
+    background-color: white;
+    color: black;;
+    margin-right: 0%;
+    padding-inline-start: 0px;
+    margin-block: 0px;
+    margin-inline: 0px;
+    justify-content: space-around;
+}
+
+body header nav ul a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+body main h2,h3,h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.parrafos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    background-color: white;
+}
+
+#parrafosMain{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-style: italic;
+    background-color: white;
+    margin-left: 75px;
+    margin-right: 75px;
+    border: 5px solid black;
+}
+
+.parrafosAside{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    background-color: rgb(81, 159, 223);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+}
+
+body main nav h4{
+    margin: 10px;
+}
+#seccionUno{
+    background-color: burlywood;
+    width: 800px;
+    align-content: center;
+    margin-left: 10%;
+    border: solid 5px red;;
+}
+#mainQuienesSomos{
+    display: flex;
+    margin: 2%;
+    background-color: none;
+}
+#mainQuienesSomos2{
+    margin: 10%;
+}
+
+#seccion2{
+    background-color: orange;
+}
+
+.headingSecciones{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+#seccionContactanos{
+    background-color: rgb(169, 214, 203);
+}
+#textoContacto{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#footerIndex{
+    text-align: center;
+    height: 50px;
+}
+
+body main section form{
+    font-weight: bold;
+}
+
+#seccion4{
+    background-image: linear-gradient(to bottom, rgb(64, 172, 157), rgb(15, 192, 74));
+}
+#botonVolver{
+    display: flex;
+    justify-content: center;
+}
+
+#paginas{
+    border: inset 3px black;
+    text-align: center;
+    background-color: white;
+}
+
+.seccionFaq{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+}
+
+#faq{
+    
+    width: 300px;
+    margin-top:10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-style: double;
+    border-radius: 1px;
+    border-top: black 5px inset;
+    border-left: black 5px inset;
+    border-bottom: rgb(78, 16, 78) 2px groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(10px, 20px);
+}
+
+.subtitulosFaq{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botonFaq{
+    display: flex;
+}
+
+.volverButton{
+
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.mainPage{
+    display: grid;
+    grid-template-columns: 65% 25%;
+    grid-template-rows: 150px 250px 250px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    justify-content: center;
+    grid-template-areas: "section1 section1"
+                         "section2 aside"
+                         "section3 aside";
+}
+
+#nuestroSueno{
+    grid-area: section1;
+}
+
+.nuestroSuenoFlex{
+    display: table-row;
+    justify-content: center;
+}
+
+#nuestroSuenoTitle{
+    background-color: rgb(81, 159, 223);
+    padding: 15px;
+}
+#porqueEmigramos{
+    grid-area: section2;
+}
+
+#porqueCanada{
+    grid-area: section3;
+}
+
+#aside3{
+    grid-area: aside;
+    background-color: none;
+    height: 100%;
+}
+
